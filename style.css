@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    width: 100%;
+    padding-top: 5rem;
+    
+}
+
+body .container{
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container{
+  
+  
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /*margin: 0 auto;*/
+}
+
+.container .card{
+    position: relative;
+    border-radius: 0.25rem;
+    box-shadow: 0.35rem 0.35rem 0.65rem 0 rgba(76, 63, 255, 0.22);
+    padding: 1rem;
+    margin: 1rem;
+    width: 17rem;
+    border-left: 0.15rem solid navy;
+    
+}
+
+.containercont .card{
+  position: relative;
+  border-radius: 0.25rem;
+  box-shadow: 0.35rem 0.35rem 0.65rem 0 rgba(76, 63, 255, 0.22);
+  padding: 1rem;
+  margin: 1rem;
+  width: 17rem;
+  border-left: 0.15rem solid navy;
+  
+}
+
+.card p{
+    color: #a3a5ae;
+    font-size: 0.8rem;
+}
+
+.imagens{
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+@media (max-width: 1100px) {
+
+    .card{
+        max-width: 530px;
+        margin: 0 auto;
+    } 
+    
+      
+}
+
+@media (max-width: 962px) {
+
+    .card{
+        max-width: 200px;
+        margin: 0 auto;
+    } 
+}
+
+
+
+@media (max-width: 390px) {
+ 
+    
+    .container{
+    
+      display: grid;
+      flex-direction: column; /*para deixar como coluna o flexBox*/
+      justify-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+    
+   
+    }
+    .container .card{
+   
+      padding: 0.2rem;
+    
+    
+    }
+  
+    .card{
+    
+      max-width: 8rem;
+    } 
+    h2{
+      font-size: 1rem;
+    }
+    p{
+      font-size: 0.7rem;
+    }
+
+    
+    .img{
+      
+      max-width: 30rem;
+    
+    }
+  
+}
+@media (max-width: 390px) {
+ 
+    
+  .containercont{
+  
+    
+    display: grid;
+    flex-direction: column; /*para deixar como coluna o flexBox*/
+    justify-content: center;
+    grid-template-columns: repeat(auto auto);
+    grid-column-gap: 0.2rem;
+    grid-gap: 5px;
+    padding-top: 3rem;
+    
+ 
+  }
+  .containercont .card{
+ 
+    padding: 0.2rem;
+  
+  
+  }
+
+  .containercont .card{
+    justify-content: center;
+    flex-direction: column;
+    max-width: 10rem;
+    min-width: 8rem;
+  } 
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+
+  
+  .img{
+    
+    max-width: 30rem;
+  
+  }
+
+}
+
+
+  a:link{
+    text-decoration: none;
+  }
+
+  .d-flex{
+    padding-right: 0.5rem;
+  }
+  .navbar-text{
+    padding-left: 100px
+
+  }
+  .imgSair{
+    padding-left: 30px
+  }
+   ul li a:hover{
+    background-color: #2a4ce2;
+    
+  }
+  
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 9999;
+    
+  }
+  
+  ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  ul li a {
+    display: block;
+    color: #333;
+    padding: 10px 20px 20px 20px;
+    
+  }
+  
+  ul li:hover > ul {
+    display: block;
+  }
+  
+  ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    padding: 0;
+  }
+  
+   ul ul li {
+    display: block;
+    white-space: nowrap;
+  }
+  
+  ul ul li a {
+    margin-left: 1.5em;
+    margin: 1.5em;
+    width: 80%;
+    display: block;
+    color: var(--cor-primeiro-quadro);
+    text-decoration: none;
+  }
+  
+   ul ul li a:hover {
+    background-color: #2a4ce2;
+  }
+  ul ul li a{
+    padding: 10px;
+  }
+
+  .mb-3{
+    align-items: center;
+    padding-top: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .form-control{
+    padding-top: 1rem;
+    
+  }
+
+  .login_titulo{
+    padding-top: 5rem;
+  }
+
+  .Cx1{
+    padding-top: 30rem;
+    
+  }
+  .Cx2{
+    padding-top: 10rem;
+  }
+.cad{
+  padding-top: 1.8rem;
+}
+
+.cadb{
+  padding-top:2rem;
+}
+
+.login_texto{
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.falaSindicoMen{
+
+  text-align: center;
+
+}
+
+.faleComSindico{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+    
+    
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999; /* para garantir que o cabeçalho fique acima de outros elementos */
+  }
+  .chamados{
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .textoAbrirChamado{
+    margin-top: 1rem;
+  }
+
+  
+  /*
+  @media (max-width: 768px) {
+    .faleComSindico {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+      justify-items: center;
+    }
+  }
+  
+
+/* Arquivos do meu CSS
+  
+  
+
+
